@@ -1,0 +1,13 @@
+Task 1 status: needs the learner's personal GitHub fork URL.
+
+The local checkout currently points to the upstream template:
+https://github.com/ibm-developer-skills-network/expressBookReviews.git
+
+Use this cURL command after replacing <GITHUB_USERNAME>/<FORK_NAME> with the learner's actual fork:
+curl -sS https://api.github.com/repos/<GITHUB_USERNAME>/<FORK_NAME>
+
+The required output must contain:
+"fork": true
+"parent": {"full_name": "ibm-developer-skills-network/expressBookReviews"}
+
+No personal fork URL was present in the workspace, so no fork claim is fabricated here.

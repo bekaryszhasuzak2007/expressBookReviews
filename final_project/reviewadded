@@ -1,0 +1,7 @@
+Commands:
+curl -sS -X PUT http://127.0.0.1:5050/customer/auth/review/1 -H "Authorization: Bearer <accessToken>" -H "Content-Type: application/json" -d '{"review":"A thoughtful classic with memorable characters."}'
+curl -sS -X PUT http://127.0.0.1:5050/customer/auth/review/1 -H "Authorization: Bearer <accessToken>" -H "Content-Type: application/json" -d '{"review":"Updated review: a thoughtful classic with memorable characters."}'
+
+Output:
+{"message":"Review added or updated","reviews":{"grader_user":"A thoughtful classic with memorable characters."}}
+{"message":"Review added or updated","reviews":{"grader_user":"Updated review: a thoughtful classic with memorable characters."}}
